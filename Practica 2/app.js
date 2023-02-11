@@ -55,3 +55,7 @@ console.log(cuadrado3(8));
 
 let cuadrado4 = numero => numero*numero;
 console.log(cuadrado(7));
+
+
+//Comentarios 
+//En esta practica se explica que debido a que javascript toma las funciones como objetos se pueden declarar de diferentes maneras ya sea usando la palabra clave function o guardandola como expresion en una variable o inclusive omitiendo la palabra function y usar la forma de arrow function tambien detalles como que en caso de ser un parametro podemos ahorrarnos los parentesis o en caso de que la instruccion a realizar sea solo una linea podemos ahorrarnos la palabra return
