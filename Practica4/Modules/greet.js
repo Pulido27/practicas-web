@@ -1,0 +1,6 @@
+let greet = () => console.log("hello from the module")
+greet();
+
+module.exports = greet;
+
+//tarde un poco en entender que lo que exportaba aqui era una sola funcion depsues de lo cambios realizados en app
