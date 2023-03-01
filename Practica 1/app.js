@@ -13,7 +13,7 @@ toFahrenheit(36); // 97
 toFahrenheit(36.68, 3); // 98.024
 toFahrenheit('-40.691 degrees C', 5); // -41.24380 
 
-//aqui creo una contante para guardar todas la funcionalidades del paquete que estoy llamando
+//aqui creo una constante para guardar todas la funcionalidades del paquete que estoy llamando
 //ERROR : un error que tuve aqui fue el no poner el nombre de la funcion antes de usar el metodo
 const pul = require("celsius");
 

@@ -12,5 +12,4 @@ emtr.on("greet", () => {
 console.log("Hello!");
 emtr.emit('greet');
 
-console.log(emtr);
-emtr.emit("jump"); //aqui olvide poner las comillas
+console.log(emtr)
