@@ -11,7 +11,7 @@ app.use('/',function(req,res,next){
 });
 
 app.get('/', function (req, res) { // se le llama a la ruta raiz para que ejecute la funcion desde ahi
-  res.render('index'); 
+  res.render('index.ejs'); 
 })
 
 app.get('/prueba', function (req, res) { // se le llama a la ruta /prueba para que ejecute la funcion desde ahi
