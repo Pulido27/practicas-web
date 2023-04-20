@@ -9,6 +9,7 @@ emtr.on("greet", () => {
      console.log('A greeting occurred!');
 });
 
+
 console.log("Hello!");
 emtr.emit('greet');
 

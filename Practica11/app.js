@@ -4,6 +4,10 @@ const app = express()
 var port = process.env.PORT || 3000; //seteamos el puerto para que escuche del servidor
 
 app.use('/assets',express.static(__dirname + '/public'))
+app.use("/", function (req, res, next) {
+  console.log("Solicitud recibida: " + req.url);
+  next();
+});
 
 app.get('/', function (req, res) { // se le llama a la ruta raiz para que ejecute la funcion desde ahi
   res.send(`<!DOCTYPE html>
@@ -16,7 +20,7 @@ app.get('/', function (req, res) { // se le llama a la ruta raiz para que ejecut
       <title>Document</title>
   </head>
   <body>
-      <h1>hello word</h1>
+      <h1>Hello word!</h1>
   </body>
   </html>`) 
 })
@@ -32,7 +36,7 @@ app.get('/prueba', function (req, res) { // se le llama a la ruta /prueba para q
       <title>Document</title>
   </head>
   <body>
-      <h1>hello word2</h1>
+      <h1>Hello word2</h1>
   </body>
   </html>`) 
 })

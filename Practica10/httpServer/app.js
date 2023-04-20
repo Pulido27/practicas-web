@@ -5,7 +5,7 @@ app.get('/', function (req, res) { // se le llama a la ruta raiz para que ejecut
   res.send('Hello World') 
 })
 
-var port = process.env.PORT || 3000; //seteamos el puerto para que escuche del servidor
+;var port = process.env.PORT || 3000 //seteamos el puerto para que escuche del servidor
 
 app.get('/prueba', function (req, res) { // se le llama a la ruta /prueba para que ejecute la funcion desde ahi
   res.send(`<!DOCTYPE html>
@@ -29,7 +29,7 @@ app.get('/api',function (req,res){
 
 //tercera ruta recibe un parametro
 
-app.get('/person/s:id', function (req, res) {
+app.get('/person/:id', function (req, res) {
   res.send(`<!DOCTYPE html>
   <html lang="en">
   <head>
